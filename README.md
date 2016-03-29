@@ -1,10 +1,11 @@
 # TD2
 Devoir - TD 2 pour ALF
 
+TD2 : Ecrivez une grammaire en PEG.js pour valider si un numero de carte de credit est vadid ou non
 
+SOLUTION:
 
 public $validate = array(
-
 
     'numero_cc' => array(
     
@@ -18,7 +19,7 @@ public $validate = array(
 
 
 
-
+FONCTIONNEMENT:
 
     Validation::cc(mixed $check, mixed $type = 'fast', boolean $deep = false, string $regex = null)¶
 Cette règle est utilisée pour vérifier si une donnée est un numéro de carte de crédit valide. Elle prend trois paramètres : ‘type’, ‘deep’ et ‘regex’.
