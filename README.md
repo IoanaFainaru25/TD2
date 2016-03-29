@@ -4,10 +4,15 @@ Devoir - TD 2 pour ALF
 
 
 public $validate = array(
+
     'numero_cc' => array(
+    
         'rule' => array('cc', array('visa', 'maestro'), false, null),
+        
         'message' => 'Le numéro de carte de crédit que vous avez saisi était invalide.'
+        
     )
+    
 );
 
 
