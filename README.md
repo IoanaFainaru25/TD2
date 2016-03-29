@@ -2,7 +2,19 @@
 Devoir - TD 2 pour ALF
 
 
-Validation::cc(mixed $check, mixed $type = 'fast', boolean $deep = false, string $regex = null)¶
+
+public $validate = array(
+    'numero_cc' => array(
+        'rule' => array('cc', array('visa', 'maestro'), false, null),
+        'message' => 'Le numéro de carte de crédit que vous avez saisi était invalide.'
+    )
+);
+
+
+
+
+
+    Validation::cc(mixed $check, mixed $type = 'fast', boolean $deep = false, string $regex = null)¶
 Cette règle est utilisée pour vérifier si une donnée est un numéro de carte de crédit valide. Elle prend trois paramètres : ‘type’, ‘deep’ et ‘regex’.
 
 Le paramètre ‘type’ peut être assigné aux valeurs ‘fast’, ‘all’ ou à l’une des suivantes :
