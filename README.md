@@ -5,6 +5,7 @@ Devoir - TD 2 pour ALF
 
 public $validate = array(
 
+
     'numero_cc' => array(
     
         'rule' => array('cc', array('visa', 'maestro'), false, null),
